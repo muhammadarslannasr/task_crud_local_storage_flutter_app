@@ -1,16 +1,19 @@
 # flutter_task_crud_local_storage
 
-A new Flutter project.
+A Task Application managing tasks by creating, updating and deleting.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This Project built with flutter version 3.19.0
 
-A few resources to get you started if this is your first Flutter project:
+following stuff used in this project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1- Floor package used for handling local storage can be checked from this link for more better understanding https://pub.dev/packages/floor
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2- Clean Architecture used via repository pattern with singletone approach along with usecases and entities.
+
+3- Bloc State Management is used for handling state within App along with handling business logic.
+
+for running build_runner below these commands are required to run for floor_generator and build_runner.
+
+flutter clean && flutter pub get && flutter pub run floor_generator && flutter pub run build_runner build
